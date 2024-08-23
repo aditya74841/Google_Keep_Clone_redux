@@ -12,7 +12,7 @@ const DrawerHeader = styled('div')(({ theme }) => ({
 }));
 
 const Archives = () => {
-    const { todos, archives, trash } = useSelector((state) => state.keep);
+    const {  archives  } = useSelector((state) => state.keep);
 
 
     return (

@@ -12,7 +12,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 }));
 
 const DeleteNotes = () => {
-  const { todos, archives, trash } = useSelector((state) => state.keep);
+  const {  trash } = useSelector((state) => state.keep);
   //   console.log("The Todos from Notes.jsx", todos);
   //   console.log("The Archives from Notes.jsx", archives);
   //   console.log("The Delete from Notes.jsx", trash);

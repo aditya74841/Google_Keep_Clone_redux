@@ -4,7 +4,6 @@ import { Box, TextField, ClickAwayListener } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { v4 as uuid } from "uuid";
 import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux";
 import { addKeep } from "../../ActionReducer/keep";
 
 const Container = styled(Box)`

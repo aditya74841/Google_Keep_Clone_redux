@@ -18,7 +18,7 @@ const Heading = styled(Typography)`
 
 
 const HeaderBar = ({ open, handleDrawer }) => {
-  const logo = '';
+
   
   return (
     <Header open={open}>
