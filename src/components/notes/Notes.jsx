@@ -76,13 +76,11 @@
 
 // export default Notes;
 
-import { useContext } from "react";
 
 import { Box, Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 
-import { DataContext } from "../../context/DataProvider";
 import { reorder } from "../../utils/common-utils";
 import { useDispatch } from "react-redux";
 
@@ -100,7 +98,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
 const Notes = () => {
   const dispatch = useDispatch();
 
-  const { todos, archives, trash } = useSelector((state) => state.keep);
+  const { todos } = useSelector((state) => state.keep);
   // console.log("The Todos from Notes.jsx", todos);
   // console.log("The Archives from Notes.jsx", archives);
   // console.log("The Delete from Notes.jsx", trash);

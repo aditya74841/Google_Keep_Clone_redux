@@ -1,10 +1,9 @@
-import { useState, useRef, useContext } from "react";
+import { useState, useRef } from "react";
 
 import { Box, TextField, ClickAwayListener } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { v4 as uuid } from "uuid";
 import { useDispatch } from "react-redux";
-import { DataContext } from "../../context/DataProvider";
 import { useSelector } from "react-redux";
 import { addKeep } from "../../ActionReducer/keep";
 
@@ -31,7 +30,6 @@ const Form = () => {
   const [showTextField, setShowTextField] = useState(false);
   const [addNote, setAddNote] = useState({ ...note, id: uuid() });
 
-  const { todos } = useSelector((state) => state.keep);
   //   console.log("The Todos is ", todos);
 
   const containerRef = useRef();

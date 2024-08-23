@@ -2,15 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Redux from './components/Redux';
-import GoogleLogin from 'react-google-login';
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    {/* <GoogleLogin/> */}
-    {/* <Redux/> */}
+  
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,9 +1,7 @@
-import { useContext } from 'react';
 
 import { Box, Grid } from '@mui/material';
 import { styled } from '@mui/material/styles';
 
-import { DataContext } from '../../context/DataProvider';
 
 //components
 import Archive from './Archive';
